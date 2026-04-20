@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>麻雀清算アプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>麻雀清算アプリ（三麻）</h1>
+
+    
+    <button onclick="mahjong_calc()">
+    <img src="https://images.clubt.jp/thumbs/39291/168007/1.jpg?v=1603395537.707626" width="150">
+    <br>
+    清算する
+    </button>
+    <div class="input"><h2>点数を入力</h2>
+    <input type="number" id="point1" placeholder="1着の点数を入力" class="number" value="500">00<br>
+    <input type="number" id="point2" placeholder="2着の点数を入力" class="number" value="300" oninput="fill3point()">00<br>
+    <input type="number" id="point3" placeholder="3着の点数を入力(自動入力)" class="number">00<br>
+    </div>
+    <div class="presult"><h2>結果</h2>
+    <div class="result">
+        <div>
+        <h5>スコア</h5>
+            1着:<span id="result1"></span><br>
+            2着:<span id="result2"></span><br>
+            3着:<span id="result3"></span><br>
+        </div>
+        <div>
+        <h5>金額</h5>
+            1着:<span id="money1"></span>円<br>
+            2着:<span id="money2"></span>円<br>
+            3着:<span id="money3"></span>円<br>
+        </div>
+    </div>
+    </div>
+    <h3>設定</h3>
+    <h4>沈みウマ</h4>
+    <input type="number" id="uma" value="10" class="number">
+    <br>
+    <h4>オカ</h4>
+    <input type="number" id="oka_moti" value="35000" class="number">点持ち
+    <input type="number" id="oka_kaesi" value="40000" class="number">点返し
+    <br>
+    <h4>レート</h4>
+    1000点<input type="number" id="rate" value="20" class="number">円
+    <br><br>
+
+    <a href="seat.html"> 席決めアプリはこちらから</a><br><br>
+    <a href="index.html">四麻清算アプリはこちらから</a>
+
+    <script src="sanma.js"></script>
+</body>
+</html>
